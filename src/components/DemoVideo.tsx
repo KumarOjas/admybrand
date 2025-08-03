@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const DemoVideo: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -22,10 +23,12 @@ const DemoVideo: React.FC = () => {
               className="relative w-full aspect-video bg-black rounded-lg shadow-lg overflow-hidden focus:outline-none focus:ring-4 focus:ring-blue-500"
               aria-label="Play demo video"
             >
-              <img
+              <Image
                 src="/next.svg"
                 alt="Demo video thumbnail"
-                className="w-full h-full object-cover"
+                layout="fill"
+                objectFit="cover"
+                className="w-full h-full"
               />
               <div className="absolute inset-0 flex items-center justify-center">
                 <svg

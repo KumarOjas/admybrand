@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import Button from './Button';
 import Modal from './Modal';
 
@@ -113,11 +114,13 @@ const Hero: React.FC = () => {
             <div className="mt-6 flex items-center">
               <div className="flex -space-x-2">
                 {[1, 2, 3, 4].map((item) => (
-                  <img 
+                  <Image 
                     key={item}
                     className="w-10 h-10 rounded-full border-2 border-white dark:border-gray-800" 
                     src={`https://i.pravatar.cc/40?img=${item}`} 
-                    alt={`User  ${item}`}
+                    alt={`User ${item}`}
+                    width={40}
+                    height={40}
                   />
                 ))}
               </div>

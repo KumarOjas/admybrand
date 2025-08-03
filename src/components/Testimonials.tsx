@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Card from './Card';
+import Image from 'next/image';
 
 const Testimonials: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -11,7 +12,7 @@ const Testimonials: React.FC = () => {
       name: "Sarah Johnson",
       role: "Marketing Director",
       company: "TechInnovate",
-      content: "ADmyBRAND has transformed our content creation process. We've increased our output by 300% while maintaining quality. The AI suggestions are incredibly accurate.",
+      content: "ADmyBRAND has transformed our content creation process. We&apos;ve increased our output by 300% while maintaining quality. The AI suggestions are incredibly accurate.",
       avatar: "https://i.pravatar.cc/100?img=1",
       rating: 5
     },
@@ -19,7 +20,7 @@ const Testimonials: React.FC = () => {
       name: "Michael Chen",
       role: "CEO",
       company: "GrowthHackers Inc",
-      content: "The predictive analytics feature alone is worth the investment. We've reduced our customer acquisition costs by 40% since implementing ADmyBRAND.",
+      content: "The predictive analytics feature alone is worth the investment. We&apos;ve reduced our customer acquisition costs by 40% since implementing ADmyBRAND.",
       avatar: "https://i.pravatar.cc/100?img=2",
       rating: 5
     },
@@ -35,7 +36,7 @@ const Testimonials: React.FC = () => {
       name: "David Thompson",
       role: "E-commerce Director",
       company: "RetailPro",
-      content: "The brand voice consistency feature ensures all our communications align with our brand guidelines. It's like having a dedicated brand manager 24/7.",
+      content: "The brand voice consistency feature ensures all our communications align with our brand guidelines. It&apos;s like having a dedicated brand manager 24/7.",
       avatar: "https://i.pravatar.cc/100?img=4",
       rating: 5
     },
@@ -91,10 +92,12 @@ const Testimonials: React.FC = () => {
           <div className="overflow-hidden">
             <Card glassmorphism className="p-8 md:p-12">
               <div className="flex flex-col md:flex-row items-center mb-6">
-                <img 
+                <Image 
                   src={testimonials[currentIndex].avatar} 
                   alt={testimonials[currentIndex].name} 
-                  className="w-20 h-20 rounded-full mb-4 md:mb-0 md:mr-6"
+                  width={80}
+                  height={80}
+                  className="rounded-full mb-4 md:mb-0 md:mr-6"
                 />
                 <div className="text-center md:text-left">
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white">

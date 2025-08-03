@@ -8,7 +8,7 @@ const FAQ: React.FC = () => {
 
   const faqs = [
     {
-      question: "How does ADmyBRAND's AI content generation work?",
+      question: "How does ADmyBRAND&apos;s AI content generation work?",
       answer: "Our AI analyzes your brand guidelines, target audience, and industry best practices to create content that resonates with your customers. We use advanced natural language processing models trained on marketing-specific data to ensure high-quality, relevant content."
     },
     {
