@@ -32,6 +32,27 @@ const FAQ: React.FC = () => {
       answer: "Yes, you can cancel your subscription at any time with no cancellation fees. Your access will continue until the end of your billing period. We do ask for feedback when you cancel to help us improve our service."
     }
   ];
+    {
+      question: "Can I integrate ADmyBRAND with my existing marketing tools?",
+      answer: "Yes! ADmyBRAND offers integrations with popular marketing platforms including HubSpot, Mailchimp, Hootsuite, and more. We also provide a robust API for custom integrations. Check our documentation for a full list of supported integrations."
+    },
+    {
+      question: "How long does it take to see results?",
+      answer: "Most users see immediate improvements in content creation speed. For campaign optimization and analytics features, we typically see significant results within 2-4 weeks as the AI models learn your specific patterns and audience preferences."
+    },
+    {
+      question: "Is my data secure with ADmyBRAND?",
+      answer: "Absolutely. We use enterprise-grade encryption for all data transmission and storage. We are GDPR compliant and undergo regular security audits. Your data is never shared with third parties or used to train our models without explicit permission."
+    },
+    {
+      question: "What kind of support do you offer?",
+      answer: "All plans include email support with 24-hour response times. Professional and Enterprise plans include priority support with 4-hour response times. Enterprise customers get 24/7 phone support and a dedicated account manager."
+    },
+    {
+      question: "Can I cancel my subscription anytime?",
+      answer: "Yes, you can cancel your subscription at any time with no cancellation fees. Your access will continue until the end of your billing period. We do ask for feedback when you cancel to help us improve our service."
+    }
+  ];
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
